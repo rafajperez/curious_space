@@ -1,0 +1,61 @@
+.apod-page {
+  min-height: calc(100vh - 4rem); // Subtrai o Header (pt-16 é 4rem)
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+}
+.apod-content-container {
+  background: rgba(0, 0, 0, 0.75); // Fundo escuro semi-transparente
+  backdrop-filter: blur(5px);
+  padding: 2.5rem;
+  border-radius: 1rem;
+  max-width: 800px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.apod-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+.apod-explanation {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #e2e8f0;
+  font-style: italic;
+}
+.apod-credit {
+  font-size: 0.875rem;
+  color: #90a4ae;
+  margin-bottom: 2rem;
+}
+
+.apod-action-button {
+  display: inline-block;
+  background-color: #3b82f6; // Azul principal
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease, transform 0.15s ease;
+
+  &:hover {
+    background-color: #2563eb;
+    transform: translateY(-2px);
+  }
+}
+.apod-page {
+  min-height: calc(100vh - 4rem);
+  display: flex;
+}
+
+.apod-content-container {
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(5px);
+}
